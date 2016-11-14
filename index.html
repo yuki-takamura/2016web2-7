@@ -34,12 +34,11 @@
        
        camera.position.z = 5;
        
-       var clock = new THREE.Clock();
        
        var render = function(){
          requestAnimationFrame(render);
          
-         mesh.rotation.y += 0.3 * colock.getDelta();
+         mesh.rotation.y += 0.01;
          
          renderer.render(scene,camera);
        };
