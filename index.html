@@ -27,8 +27,8 @@
        var loader = new THREE.TextureLoader();
        var geometry = new THREE.SphereGeometry(2,32,16);
        var material = new THREE.MeshStandardMaterial({
-         color:0xccffcc
-       map:loader.load('texture.jpg')});
+         color:0xccffcc,
+         map:loader.load('texture.jpg')});
        var mesh = new THREE.Mesh(geometry,material);
        scene.add(mesh);
        
